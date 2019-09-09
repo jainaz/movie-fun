@@ -1,0 +1,80 @@
+Getting env variables for app moviefun in org ankur.jain3.rbs.com / space sandbox as ankur.jain3@rbs.com...
+OK
+
+System-Provided:
+{
+ "VCAP_SERVICES": {
+  "p.mysql": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "hostname": "q-n3s3y1.q-g26380.bosh",
+     "jdbcUrl": "jdbc:mysql://q-n3s3y1.q-g26380.bosh:3306/service_instance_db?user=116d683977054a1a932ae19d4bfc9869\u0026password=yasfs271us3nrm0o\u0026useSSL=false",
+     "name": "service_instance_db",
+     "password": "yasfs271us3nrm0o",
+     "port": 3306,
+     "uri": "mysql://116d683977054a1a932ae19d4bfc9869:yasfs271us3nrm0o@q-n3s3y1.q-g26380.bosh:3306/service_instance_db?reconnect=true",
+     "username": "116d683977054a1a932ae19d4bfc9869"
+    },
+    "instance_name": "movies-mysql",
+    "label": "p.mysql",
+    "name": "movies-mysql",
+    "plan": "db-small",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "mysql"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "user-provided": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "accessKey": "AKIAVT7FZ27L2GW7CX7H",
+     "bucket": "ankur.jain3.rbs.com",
+     "secretKey": ""
+    },
+    "instance_name": "s3-service",
+    "label": "user-provided",
+    "name": "s3-service",
+    "syslog_drain_url": "",
+    "tags": [],
+    "volume_mounts": []
+   }
+  ]
+ }
+}
+
+{
+ "VCAP_APPLICATION": {
+  "application_id": "4a2de958-65a3-4f57-8a37-5612c1814f9a",
+  "application_name": "moviefun",
+  "application_uris": [
+   "moviefun-relaxed-okapi.apps.evans.pal.pivotal.io"
+  ],
+  "application_version": "fc4ef7e1-78ba-4c4b-a883-b7a259c27697",
+  "cf_api": "https://api.sys.evans.pal.pivotal.io",
+  "limits": {
+   "disk": 1024,
+   "fds": 16384,
+   "mem": 1024
+  },
+  "name": "moviefun",
+  "space_id": "141bbf96-ac47-4835-b8d8-e97e7a9a61b7",
+  "space_name": "sandbox",
+  "uris": [
+   "moviefun-relaxed-okapi.apps.evans.pal.pivotal.io"
+  ],
+  "users": null,
+  "version": "fc4ef7e1-78ba-4c4b-a883-b7a259c27697"
+ }
+}
+
+No user-defined env variables have been set
+
+No running env variables have been set
+
+No staging env variables have been set
+
